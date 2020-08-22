@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121D51AD24F1651B005631D6 /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AC24F1651B005631D6 /* OrderDataModel.swift */; };
+		121D51AF24F1654D005631D6 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AE24F1654D005631D6 /* OrderViewModel.swift */; };
+		121D51B124F178B6005631D6 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51B024F178B6005631D6 /* Extra.swift */; };
 		1298333D24EE4D230081E197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298333C24EE4D230081E197 /* AppDelegate.swift */; };
 		1298333F24EE4D230081E197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298333E24EE4D230081E197 /* SceneDelegate.swift */; };
 		1298334424EE4D230081E197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1298334224EE4D230081E197 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121D51AC24F1651B005631D6 /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
+		121D51AE24F1654D005631D6 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		121D51B024F178B6005631D6 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
 		1298333924EE4D230081E197 /* finaccel_kredivo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finaccel_kredivo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1298333C24EE4D230081E197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1298333E24EE4D230081E197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,13 +50,13 @@
 		1298334524EE4D250081E197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1298334824EE4D250081E197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1298334A24EE4D250081E197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12E570DC24EFDAF70044C136 /* promo-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "promo-3.jpg"; path = "../../assets/promo-3.jpg"; sourceTree = "<group>"; };
-		12E570DD24EFDAF70044C136 /* promo-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "promo-2.jpg"; path = "../../assets/promo-2.jpg"; sourceTree = "<group>"; };
-		12E570DE24EFDAF80044C136 /* telkomsel-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telkomsel-logo.png"; path = "../../assets/telkomsel-logo.png"; sourceTree = "<group>"; };
-		12E570DF24EFDAF80044C136 /* indosat-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "indosat-logo.png"; path = "../../assets/indosat-logo.png"; sourceTree = "<group>"; };
-		12E570E024EFDAF80044C136 /* others-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "others-logo.png"; path = "../../assets/others-logo.png"; sourceTree = "<group>"; };
-		12E570E124EFDAF80044C136 /* promo-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "promo-1.jpg"; path = "../../assets/promo-1.jpg"; sourceTree = "<group>"; };
-		12E570E224EFDAF80044C136 /* xl-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "xl-logo.png"; path = "../../assets/xl-logo.png"; sourceTree = "<group>"; };
+		12E570DC24EFDAF70044C136 /* promo-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "promo-3.jpg"; sourceTree = "<group>"; };
+		12E570DD24EFDAF70044C136 /* promo-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "promo-2.jpg"; sourceTree = "<group>"; };
+		12E570DE24EFDAF80044C136 /* telkomsel-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telkomsel-logo.png"; sourceTree = "<group>"; };
+		12E570DF24EFDAF80044C136 /* indosat-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indosat-logo.png"; sourceTree = "<group>"; };
+		12E570E024EFDAF80044C136 /* others-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "others-logo.png"; sourceTree = "<group>"; };
+		12E570E124EFDAF80044C136 /* promo-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "promo-1.jpg"; sourceTree = "<group>"; };
+		12E570E224EFDAF80044C136 /* xl-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xl-logo.png"; sourceTree = "<group>"; };
 		12E570F124EFEDED0044C136 /* TopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpViewController.swift; sourceTree = "<group>"; };
 		12E570F324EFEE110044C136 /* LoanConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanConfirmationViewController.swift; sourceTree = "<group>"; };
 		12E570F524EFEE280044C136 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		12E570EA24EFED430044C136 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				121D51B024F178B6005631D6 /* Extra.swift */,
 				1298333C24EE4D230081E197 /* AppDelegate.swift */,
 				1298333E24EE4D230081E197 /* SceneDelegate.swift */,
 				12E570F024EFEDB20044C136 /* view model */,
@@ -153,6 +160,7 @@
 			children = (
 				12E5710124EFEF0C0044C136 /* PromoDataModel.swift */,
 				12E5710324EFEF320044C136 /* MobileProductDataModel.swift */,
+				121D51AC24F1651B005631D6 /* OrderDataModel.swift */,
 			);
 			path = "data model";
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 				12E570FF24EFEEE80044C136 /* MerchantPromoViewViewModel.swift */,
 				12E5710A24F019FD0044C136 /* PromoViewModel.swift */,
 				12E5710C24F01A120044C136 /* ProductViewModel.swift */,
+				121D51AE24F1654D005631D6 /* OrderViewModel.swift */,
 			);
 			path = "view model";
 			sourceTree = "<group>";
@@ -205,7 +214,6 @@
 				5F826FFE26F08221DAE0340E /* Pods-finaccel_kredivo_test.debug.xcconfig */,
 				1CAB9080CF22106655B37161 /* Pods-finaccel_kredivo_test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -332,7 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E5710B24F019FD0044C136 /* PromoViewModel.swift in Sources */,
+				121D51AD24F1651B005631D6 /* OrderDataModel.swift in Sources */,
 				12E5710924EFF7920044C136 /* PromoViewCell.swift in Sources */,
+				121D51AF24F1654D005631D6 /* OrderViewModel.swift in Sources */,
 				12E570FC24EFEEC10044C136 /* LoanConfirmationViewViewModel.swift in Sources */,
 				1298333D24EE4D230081E197 /* AppDelegate.swift in Sources */,
 				12E570F424EFEE110044C136 /* LoanConfirmationViewController.swift in Sources */,
@@ -342,6 +352,7 @@
 				12E570FE24EFEED70044C136 /* PaymentDetailsViewViewModel.swift in Sources */,
 				12E5710724EFF77E0044C136 /* ProductViewCell.swift in Sources */,
 				12E570FA24EFEEB00044C136 /* TopUpViewViewModel.swift in Sources */,
+				121D51B124F178B6005631D6 /* Extra.swift in Sources */,
 				12E570F224EFEDED0044C136 /* TopUpViewController.swift in Sources */,
 				12E570F624EFEE280044C136 /* PaymentDetailsViewController.swift in Sources */,
 				12E5710024EFEEE80044C136 /* MerchantPromoViewViewModel.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 
 struct Product{
     let name : String
-    let price : Int
     let value : Int
-    let type : Int
+    let price : Int
+    let logoOperator : String
 }

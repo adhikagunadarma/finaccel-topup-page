@@ -9,17 +9,21 @@
 import UIKit
 
 class PaymentDetailsViewController: UIViewController {
+    
+    var paymentDetailViewViewModel: PaymentDetailViewViewModel!
 
     @IBOutlet weak var mobileNumberLogo: UIImageView!
     @IBOutlet weak var mobileNumberText: UILabel!
-    @IBOutlet weak var statusText: UILabel!
+
     @IBOutlet weak var orderIdText: UILabel!
+    @IBOutlet weak var statusText: UILabel!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productFeenName: UILabel!
     @IBOutlet weak var productFee: UILabel!
     @IBOutlet weak var productTotal: UILabel!
-    @IBOutlet weak var productEstimatedDate: UILabel!
+ 
+    @IBOutlet weak var productDueDate: UILabel!
     @IBOutlet weak var orderDetailView: UIView!
     @IBOutlet weak var orderDetailContentView: UIView!
     @IBOutlet weak var paymentDetailContentView: UIView!
@@ -28,6 +32,7 @@ class PaymentDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
+        self.setupData()
     }
     
 
@@ -41,6 +46,19 @@ class PaymentDetailsViewController: UIViewController {
         self.paymentDetailContentView.roundCorners([.bottomLeft, .bottomRight], radius: 10)
         self.noticeView.layer.cornerRadius = 10.0
     }
+    func setupData(){
+        self.mobileNumberText.text = self.paymentDetailViewViewModel.orderMobileNumber
+        self.mobileNumberLogo.image = UIImage(named:  self.paymentDetailViewViewModel.productLogo)
+        self.productName.text = self.paymentDetailViewViewModel.productName
+        self.productFee.text = self.paymentDetailViewViewModel.productFee
+        self.productPrice.text = self.paymentDetailViewViewModel.productPrice
+        self.productDueDate.text = self.paymentDetailViewViewModel.productDueDate
+        self.productTotal.text = self.paymentDetailViewViewModel.productTotal
+        self.orderIdText.text = self.paymentDetailViewViewModel.orderId
+        self.statusText.text = self.paymentDetailViewViewModel.orderStatus ? "Success" : "Fail"
+        self.statusText.textColor = self.paymentDetailViewViewModel.orderStatus ? UIColor.systemGreen : UIColor.systemRed
+    }
+    
 }
 
 

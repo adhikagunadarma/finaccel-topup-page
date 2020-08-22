@@ -14,13 +14,18 @@ class ProductViewCell: UITableViewCell {
     @IBOutlet weak var priceButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+       super.setSelected(selected, animated: animated)
     }
+    
+    func configure(viewModel : ProductViewModel){
+        productValue.text = "\(viewModel.formattedValue)"
+        priceButton.setTitle("\(viewModel.formattedPrice)", for: .normal)
+    }
+
+
+  
 
 }

@@ -14,5 +14,5 @@ struct Promo {
     let title : String
     let validDate : String
     let promoCode : String
-    let termsCondition : String
+    let termsCondition : [String]
 }
