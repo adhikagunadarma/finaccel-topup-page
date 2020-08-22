@@ -20,12 +20,27 @@ class PaymentDetailsViewController: UIViewController {
     @IBOutlet weak var productFee: UILabel!
     @IBOutlet weak var productTotal: UILabel!
     @IBOutlet weak var productEstimatedDate: UILabel!
+    @IBOutlet weak var orderDetailView: UIView!
+    @IBOutlet weak var orderDetailContentView: UIView!
+    @IBOutlet weak var paymentDetailContentView: UIView!
+    @IBOutlet weak var paymentDetailView: UIView!
+    @IBOutlet weak var noticeView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setupView()
     }
     
 
     @IBAction func okButtonClicked(_ sender: Any) {
     }
+    
+    func setupView(){
+        self.orderDetailView.layer.cornerRadius = 10.0
+        self.orderDetailContentView.roundCorners([.bottomLeft, .bottomRight], radius: 10)
+        self.paymentDetailView.layer.cornerRadius = 10.0
+        self.paymentDetailContentView.roundCorners([.bottomLeft, .bottomRight], radius: 10)
+        self.noticeView.layer.cornerRadius = 10.0
+    }
 }
+
+

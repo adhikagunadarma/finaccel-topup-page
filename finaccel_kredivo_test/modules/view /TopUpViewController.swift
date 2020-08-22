@@ -18,19 +18,28 @@ class TopUpViewController: UIViewController {
     @IBOutlet weak var productTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setupView()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func mobileNumberDidFinish(_ sender: Any) {
     }
-    */
+    
+    func setupView(){
+        self.pulsaBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16)
+        self.dataPackageBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16)
+        navigationController?.navigationBar.barTintColor = UIColor.blue
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.tabBar.tintColor = UIColor.orange
+        self.tabBar.selectedItem = self.pulsaBarItem
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16)!], for: .selected)
+    }
 
+}
+
+extension TopUpViewController : UITabBarDelegate{
+ 
 }

@@ -31,6 +31,9 @@
 		12E5710424EFEF320044C136 /* MobileProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5710324EFEF320044C136 /* MobileProductDataModel.swift */; };
 		12E5710724EFF77E0044C136 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5710624EFF77E0044C136 /* ProductViewCell.swift */; };
 		12E5710924EFF7920044C136 /* PromoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5710824EFF7920044C136 /* PromoViewCell.swift */; };
+		12E5710B24F019FD0044C136 /* PromoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5710A24F019FD0044C136 /* PromoViewModel.swift */; };
+		12E5710D24F01A120044C136 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5710C24F01A120044C136 /* ProductViewModel.swift */; };
+		A9123BAEB2123901A55CD1AB /* Pods_finaccel_kredivo_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F71A6003DB7FC0751B79537 /* Pods_finaccel_kredivo_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,11 @@
 		12E5710324EFEF320044C136 /* MobileProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileProductDataModel.swift; sourceTree = "<group>"; };
 		12E5710624EFF77E0044C136 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
 		12E5710824EFF7920044C136 /* PromoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewCell.swift; sourceTree = "<group>"; };
+		12E5710A24F019FD0044C136 /* PromoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewModel.swift; sourceTree = "<group>"; };
+		12E5710C24F01A120044C136 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		1CAB9080CF22106655B37161 /* Pods-finaccel_kredivo_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finaccel_kredivo_test.release.xcconfig"; path = "Target Support Files/Pods-finaccel_kredivo_test/Pods-finaccel_kredivo_test.release.xcconfig"; sourceTree = "<group>"; };
+		3F71A6003DB7FC0751B79537 /* Pods_finaccel_kredivo_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finaccel_kredivo_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F826FFE26F08221DAE0340E /* Pods-finaccel_kredivo_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finaccel_kredivo_test.debug.xcconfig"; path = "Target Support Files/Pods-finaccel_kredivo_test/Pods-finaccel_kredivo_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9123BAEB2123901A55CD1AB /* Pods_finaccel_kredivo_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,8 @@
 			children = (
 				1298333B24EE4D230081E197 /* finaccel_kredivo_test */,
 				1298333A24EE4D230081E197 /* Products */,
+				AB51FAA1268E26A1B6F19CB6 /* Pods */,
+				6E1A70B89C64FE8EC8A5065A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +176,8 @@
 				12E570FB24EFEEC10044C136 /* LoanConfirmationViewViewModel.swift */,
 				12E570FD24EFEED70044C136 /* PaymentDetailsViewViewModel.swift */,
 				12E570FF24EFEEE80044C136 /* MerchantPromoViewViewModel.swift */,
+				12E5710A24F019FD0044C136 /* PromoViewModel.swift */,
+				12E5710C24F01A120044C136 /* ProductViewModel.swift */,
 			);
 			path = "view model";
 			sourceTree = "<group>";
@@ -178,6 +191,24 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		6E1A70B89C64FE8EC8A5065A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F71A6003DB7FC0751B79537 /* Pods_finaccel_kredivo_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB51FAA1268E26A1B6F19CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F826FFE26F08221DAE0340E /* Pods-finaccel_kredivo_test.debug.xcconfig */,
+				1CAB9080CF22106655B37161 /* Pods-finaccel_kredivo_test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1298334D24EE4D250081E197 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_test" */;
 			buildPhases = (
+				8BC3C5A101C901BB789C64B9 /* [CP] Check Pods Manifest.lock */,
 				1298333524EE4D230081E197 /* Sources */,
 				1298333624EE4D230081E197 /* Frameworks */,
 				1298333724EE4D230081E197 /* Resources */,
+				C8E29D513C34E9D8A154A644 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,11 +284,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BC3C5A101C901BB789C64B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-finaccel_kredivo_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E29D513C34E9D8A154A644 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finaccel_kredivo_test/Pods-finaccel_kredivo_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finaccel_kredivo_test/Pods-finaccel_kredivo_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-finaccel_kredivo_test/Pods-finaccel_kredivo_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1298333524EE4D230081E197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E5710B24F019FD0044C136 /* PromoViewModel.swift in Sources */,
 				12E5710924EFF7920044C136 /* PromoViewCell.swift in Sources */,
 				12E570FC24EFEEC10044C136 /* LoanConfirmationViewViewModel.swift in Sources */,
 				1298333D24EE4D230081E197 /* AppDelegate.swift in Sources */,
@@ -269,6 +345,7 @@
 				12E570F224EFEDED0044C136 /* TopUpViewController.swift in Sources */,
 				12E570F624EFEE280044C136 /* PaymentDetailsViewController.swift in Sources */,
 				12E5710024EFEEE80044C136 /* MerchantPromoViewViewModel.swift in Sources */,
+				12E5710D24F01A120044C136 /* ProductViewModel.swift in Sources */,
 				1298333F24EE4D230081E197 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +488,7 @@
 		};
 		1298334E24EE4D250081E197 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F826FFE26F08221DAE0340E /* Pods-finaccel_kredivo_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -428,6 +506,7 @@
 		};
 		1298334F24EE4D250081E197 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CAB9080CF22106655B37161 /* Pods-finaccel_kredivo_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

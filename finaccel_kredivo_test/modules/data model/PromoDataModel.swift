@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+
+struct Promo {
+    let imageBanner : String
+    let title : String
+    let validDate : String
+    let promoCode : String
+    let termsCondition : String
+}

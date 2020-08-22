@@ -42,6 +42,9 @@
                                         <rect key="frame" x="68" y="20" width="295" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="mobileNumberDidFinish:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Gqv-ka-Ye0"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-MZ-Dy7">
                                         <rect key="frame" x="68" y="0.0" width="346" height="15"/>
@@ -106,8 +109,12 @@
                                     <constraint firstAttribute="height" constant="50" id="WNM-Mx-vGR"/>
                                 </constraints>
                                 <items>
-                                    <tabBarItem title="Pulsa" id="ukx-mz-uka"/>
-                                    <tabBarItem title="Data Package" id="nIK-pG-p0u"/>
+                                    <tabBarItem title="Pulsa" id="ukx-mz-uka">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Data Package" id="nIK-pG-p0u">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                                    </tabBarItem>
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-oO-Mmk">
@@ -409,7 +416,7 @@
                                                     <constraint firstAttribute="height" constant="15" id="nyx-Th-ksS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Continuing, I agree with loan agreement of Kredivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4o-Ff-xSZ">
@@ -418,7 +425,7 @@
                                                     <constraint firstAttribute="height" constant="10" id="nli-x8-vFh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-FP-KkC">
@@ -495,9 +502,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Loan Confirmation" id="gIj-st-EBC"/>
                     <connections>
+                        <outlet property="kredivoPinContentView" destination="So8-oC-15j" id="Lmh-zF-zIc"/>
+                        <outlet property="kredivoPinView" destination="4gX-I2-TS2" id="iyw-Fw-6Cx"/>
                         <outlet property="mobileNumberLogo" destination="G8O-6Y-PEm" id="7lV-Q7-jpG"/>
                         <outlet property="mobileNumberText" destination="cIF-k2-K3f" id="QMk-TP-ut4"/>
+                        <outlet property="noticeOTPView" destination="gya-Yq-YxJ" id="L4s-Ue-KnV"/>
                         <outlet property="otpNotice" destination="V05-Mn-NWI" id="m8q-Uz-Lgy"/>
+                        <outlet property="paymentDetailView" destination="PqL-HQ-mkM" id="h58-nm-4Jr"/>
+                        <outlet property="paymentDetailsContentView" destination="5I5-R8-Ogf" id="GLv-5r-Kfo"/>
+                        <outlet property="phoneView" destination="E4H-n3-s0T" id="CVb-1E-eTr"/>
                         <outlet property="pinTextfield" destination="4LE-FP-KkC" id="Gzg-U3-IPs"/>
                         <outlet property="productEstimatedName" destination="4ty-qd-1S4" id="aJp-fw-UCW"/>
                         <outlet property="productFee" destination="Neh-0h-1Cz" id="glY-C3-vJz"/>
@@ -791,7 +804,7 @@
                                             <constraint firstAttribute="height" constant="15" id="vcN-dH-gRl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have problem? Email us at support@kredivo.com" textAlignment="justified" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sy1-Jn-IAJ">
@@ -800,7 +813,7 @@
                                             <constraint firstAttribute="height" constant="15" id="vPy-6r-erQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -839,7 +852,12 @@
                     <connections>
                         <outlet property="mobileNumberLogo" destination="Ao5-Rn-oPu" id="anw-GI-C3J"/>
                         <outlet property="mobileNumberText" destination="Azg-Jb-8Ne" id="xr4-xi-xzQ"/>
+                        <outlet property="noticeView" destination="Khn-Yp-iPp" id="DKp-Jn-CBL"/>
+                        <outlet property="orderDetailContentView" destination="mey-Xf-bam" id="5f6-Hz-8uL"/>
+                        <outlet property="orderDetailView" destination="YJi-Ww-LIx" id="LBO-KA-jBT"/>
                         <outlet property="orderIdText" destination="itn-hH-4Gx" id="Xwo-93-iy1"/>
+                        <outlet property="paymentDetailContentView" destination="qKn-gO-Vz6" id="4vy-lB-CgV"/>
+                        <outlet property="paymentDetailView" destination="14o-hg-wJC" id="fau-V6-diO"/>
                         <outlet property="productEstimatedDate" destination="Yea-8L-Iwl" id="iXa-nA-c5v"/>
                         <outlet property="productFee" destination="El9-et-XTQ" id="fas-Iq-7gb"/>
                         <outlet property="productFeenName" destination="OBd-a1-5er" id="7Qz-Hw-xNx"/>
@@ -894,7 +912,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid date : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-Y3-ghO">
                                                         <rect key="frame" x="8" y="8" width="398" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="10 - 31 Januari 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2h-mR-F9u">
@@ -921,7 +939,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Condition :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCH-aX-dcj">
                                                         <rect key="frame" x="8" y="8" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kbu-sY-4eg">
@@ -968,7 +986,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher Code :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyu-Pp-qNR">
                                                         <rect key="frame" x="8" y="8" width="398" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BIRTHDAY9" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25J-Bm-POw">

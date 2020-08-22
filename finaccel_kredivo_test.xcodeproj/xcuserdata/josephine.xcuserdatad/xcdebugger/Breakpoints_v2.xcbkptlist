@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9DE79AEE-E960-4404-A2A7-E22F1B4EA26B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finaccel_kredivo_test/modules/view /LoanConfirmationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "LoanConfirmationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - 3b650e21154b10ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.productEstimatedName.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - 3b650e21154b10ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.productEstimatedName.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - 85584767f05263f6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.productEstimatedName.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - c67eb76a16065254"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.productEstimatedName.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - 7bc86b87d1a7be46"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; finaccel_kredivo_test.LoanConfirmationViewController"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "999">
+               </Location>
+               <Location
+                  uuid = "57D8C619-A07A-46A0-A8AD-B251C3AC3DE3 - 9f3159f7375749b9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finaccel_kredivo_test.LoanConfirmationViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;finaccel_kredivo_test.LoanConfirmationViewController&gt;"
+                  moduleName = "finaccel_kredivo_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/finaccel_kredivo_test/finaccel_kredivo_test/modules/view%20/LoanConfirmationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "931">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
