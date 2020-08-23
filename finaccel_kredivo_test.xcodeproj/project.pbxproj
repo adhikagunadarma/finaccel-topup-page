@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1217E41D24F202C700BAE117 /* kredivologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1217E41C24F202C700BAE117 /* kredivologo.png */; };
+		1217E41F24F21E2F00BAE117 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217E41E24F21E2F00BAE117 /* Data.swift */; };
 		121D51AD24F1651B005631D6 /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AC24F1651B005631D6 /* OrderDataModel.swift */; };
 		121D51AF24F1654D005631D6 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AE24F1654D005631D6 /* OrderViewModel.swift */; };
 		121D51B124F178B6005631D6 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51B024F178B6005631D6 /* Extra.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1217E41C24F202C700BAE117 /* kredivologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kredivologo.png; sourceTree = "<group>"; };
+		1217E41E24F21E2F00BAE117 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		121D51AC24F1651B005631D6 /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
 		121D51AE24F1654D005631D6 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		121D51B024F178B6005631D6 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		12E570EA24EFED430044C136 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				1217E41E24F21E2F00BAE117 /* Data.swift */,
 				121D51B024F178B6005631D6 /* Extra.swift */,
 				1298333C24EE4D230081E197 /* AppDelegate.swift */,
 				1298333E24EE4D230081E197 /* SceneDelegate.swift */,
@@ -354,6 +357,7 @@
 				12E5710424EFEF320044C136 /* MobileProductDataModel.swift in Sources */,
 				12E570F824EFEE3A0044C136 /* MerchantPromoViewController.swift in Sources */,
 				12E570FE24EFEED70044C136 /* PaymentDetailsViewViewModel.swift in Sources */,
+				1217E41F24F21E2F00BAE117 /* Data.swift in Sources */,
 				12E5710724EFF77E0044C136 /* ProductViewCell.swift in Sources */,
 				12E570FA24EFEEB00044C136 /* TopUpViewViewModel.swift in Sources */,
 				121D51B124F178B6005631D6 /* Extra.swift in Sources */,
@@ -507,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = finaccel_kredivo_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = finaccel_kredivo_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -49,6 +49,7 @@ class TopUpViewController: UIViewController {
         self.promoScrollView.delegate = self
         self.productTableView.delegate = self
         self.productTableView.dataSource = self
+        self.tabBar.delegate = self
         
         self.setupView()
         self.setupTimerForPromo()
@@ -158,6 +159,12 @@ class TopUpViewController: UIViewController {
     
 }
 
+extension TopUpViewController : UITabBarDelegate{
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        self.mobileNumberTextField.text = ""
+    }
+}
+
 extension TopUpViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return topUpViewViewModel.numberOfProducts
@@ -174,15 +181,3 @@ extension TopUpViewController : UITableViewDelegate, UITableViewDataSource{
     }
 }
 
-class PromoBanner: UIButton {
-    
-    var promoViewModel: PromoViewModel?
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("This class does not support NSCoding")
-    }
-}
