@@ -26,7 +26,6 @@ class TopUpViewViewModel {
             .drive(onNext: { [weak self] (queryString) in
                 if queryString.count >= 4 && (queryString.prefix(2) == "08" || queryString.prefix(3) == "628") {
                     if self?._mobileLogo.value == nil {
-                        print (queryString.prefix(4))
                         self?.initializeProductAndImage(Operator(rawValue: String(queryString.prefix(4))) ?? Operator(rawValue: "0")!)
                     }
                 }else{

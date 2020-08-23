@@ -10,6 +10,8 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+
+// example mobile number, xl = 0878, indosat = 0814, telkomsel = 0811, kindly try it
 class TopUpViewController: UIViewController {
     
     @IBOutlet weak var pulsaBarItem: UITabBarItem!
@@ -49,11 +51,16 @@ class TopUpViewController: UIViewController {
         self.promoScrollView.delegate = self
         self.productTableView.delegate = self
         self.productTableView.dataSource = self
-        self.tabBar.delegate = self
         
         self.setupView()
+        
         self.setupTimerForPromo()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.setupPromoBanner()
+    }
+        
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "LoanConfirmationSegueIdentifier"){
@@ -95,12 +102,17 @@ class TopUpViewController: UIViewController {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16)!], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16)!], for: .selected)
         
-        // setup promo banner
+        self.productTableView.separatorStyle = .none
         
-        self.promoScrollView.isScrollEnabled = false
-        let promoBannerWidth = self.promoScrollView.frame.width * 0.8
-        let promoBannerHeight = self.promoScrollView.frame.height
+    }
+    
+    func setupPromoBanner(){
+        
+        self.promoScrollView.isScrollEnabled = true
+        let promoBannerWidth = self.promoScrollView.frame.size.width * 0.8
+        let promoBannerHeight = self.promoScrollView.frame.size.height
         let promoTotalPadding = CGFloat(20 * 2)
+        
         
         self.promoScrollView.contentSize = CGSize(width:(promoBannerWidth * 3) + (promoTotalPadding * 3) , height:promoBannerHeight)
         
@@ -108,24 +120,13 @@ class TopUpViewController: UIViewController {
             if let viewModel = topUpViewViewModel.viewModelForPromo(at: i){
                 let image = UIImage(named: viewModel.promoBanner) as UIImage?
                 let button   = UIButton(type: UIButton.ButtonType.custom)
-                button.frame = CGRect(x:20.0 + (promoTotalPadding * CGFloat(i)) + (promoBannerWidth * CGFloat(i)), y: 20 ,width:self.promoScrollView.frame.width * 0.8, height:self.promoScrollView.frame.height - promoTotalPadding)
+                button.frame = CGRect(x:20.0 + (promoTotalPadding * CGFloat(i)) + (promoBannerWidth * CGFloat(i)), y: 20 ,width:promoBannerWidth, height:promoBannerHeight - promoTotalPadding)
                 button.setBackgroundImage(image, for: .normal)
                 button.tag = i
                 button.addTarget(self, action: #selector(promoButtonPressed), for:.touchUpInside)
                 self.promoScrollView.addSubview(button)
             }
         }
-        
-        //        let imgOne = UIImageView(frame: CGRect(x:20.0 + (promoTotalPadding * 0) + (promoBannerWidth * 0), y: 20 ,width:self.promoScrollView.frame.width * 0.8, height:self.promoScrollView.frame.height - 40))
-        //        imgOne.image = UIImage(named: "promo-1")
-        //        let imgTwo = UIImageView(frame: CGRect(x:20.0 + (promoTotalPadding * 1) + (promoBannerWidth * 1), y: 20 ,width:self.promoScrollView.frame.width * 0.8, height:self.promoScrollView.frame.height - 40))
-        //        imgTwo.image = UIImage(named: "promo-2")
-        //        let imgThree = UIImageView(frame: CGRect(x:20.0 + (promoTotalPadding * 2) + (promoBannerWidth * 2), y: 20 ,width:self.promoScrollView.frame.width * 0.8, height:self.promoScrollView.frame.height - 40))
-        //        imgThree.image = UIImage(named: "promo-3")
-        //
-        //        self.promoScrollView.addSubview(imgOne)
-        //        self.promoScrollView.addSubview(imgTwo)
-        //        self.promoScrollView.addSubview(imgThree)
         
     }
     
@@ -134,14 +135,11 @@ class TopUpViewController: UIViewController {
     }
     
     @objc func moveToNextBanner (){
-        
-        let pageWidth = self.promoScrollView.frame.width * 0.8 + 40
+        let pageWidth = self.promoScrollView.frame.width * 0.8
         let maxWidth:CGFloat = (pageWidth * 3)
         let contentOffset:CGFloat = self.promoScrollView.contentOffset.x
-        
         var slideToX = contentOffset + pageWidth
-        
-        if  contentOffset + pageWidth == maxWidth
+        if  (contentOffset + pageWidth) >= maxWidth
         {
             slideToX = 0
         }
@@ -159,19 +157,13 @@ class TopUpViewController: UIViewController {
     
 }
 
-extension TopUpViewController : UITabBarDelegate{
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        self.mobileNumberTextField.text = ""
-    }
-}
-
 extension TopUpViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return topUpViewViewModel.numberOfProducts
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductViewCell
-        
+      
         if let viewModel = topUpViewViewModel.viewModelForProduct(at: indexPath.row){
             cell.configure(viewModel: viewModel)
             cell.priceButton.tag = indexPath.row //or value whatever you want (must be Int)
