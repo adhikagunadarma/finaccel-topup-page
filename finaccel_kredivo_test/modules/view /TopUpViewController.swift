@@ -62,6 +62,7 @@ class TopUpViewController: UIViewController {
                 let productViewModel = self.topUpViewViewModel.viewModelForProduct(at: selectedRow)
                 let mobileNumber = self.mobileNumberTextField.text!
                 destVC.loanConfirmationViewViewModel = LoanConfirmationViewViewModel(productViewModel: productViewModel!, mobileNumber: mobileNumber)
+                self.mobileNumberTextField.text = ""
             }
         }
         
@@ -70,8 +71,7 @@ class TopUpViewController: UIViewController {
             if let button:UIButton = sender as! UIButton? {
                 let selectedRow = button.tag
                 let promoViewModel = self.topUpViewViewModel.viewModelForPromo(at: selectedRow)
-                //                let mobileNumber = self.mobileNumberTextField.text!
-                //                destVC.loanConfirmationViewViewModel = LoanConfirmationViewViewModel(productViewModel: productViewModel!, mobileNumber: mobileNumber)
+                destVC.merchantPromoViewModel = MerchantPromoViewModel(promoViewModel: promoViewModel!)
             }
         }
     }

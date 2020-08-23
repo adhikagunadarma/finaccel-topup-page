@@ -38,9 +38,7 @@ class LoanConfirmationViewController: UIViewController {
         if segue.identifier == "PaymentDetailSegueIdentifier" {
             if let destinationVC = segue.destination as? PaymentDetailsViewController {
                 guard let orderViewModel = self.loanConfirmationViewViewModel.order else { return }
-//                print(orderViewModel.orderPhoneNumber)
-//                print(orderViewModel.orderID)
-//                print(orderViewModel.orderProduct.price)
+
                 destinationVC.paymentDetailViewViewModel = PaymentDetailViewViewModel(orderViewModel: orderViewModel)
             }
         }
@@ -67,6 +65,27 @@ class LoanConfirmationViewController: UIViewController {
         self.phoneView.layer.shadowRadius = 5.0
         self.mobileNumberLogo.layer.cornerRadius = self.mobileNumberLogo.frame.size.width / 2
         self.mobileNumberLogo.clipsToBounds = true
+        self.phoneView.layer.shadowColor = UIColor.black.cgColor
+        self.phoneView.layer.shadowOpacity = 0.3
+        self.phoneView.layer.shadowOffset = .zero
+        self.phoneView.layer.shadowRadius = 5
+        
+        //setup button inside kredivo on
+        self.setupButtonInsidePin()
+    }
+    
+    func setupButtonInsidePin(){
+        let systemIcon = self.pinTextfield.isSecureTextEntry ? "eye.slash" : "eye"
+        let button = UIButton(type: .custom)
+        let imageConfiguration = UIImage.SymbolConfiguration(pointSize: 15, weight: .black)
+        let image = UIImage(systemName: systemIcon, withConfiguration: imageConfiguration)?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        button.setImage(image, for: .normal)
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
+        button.frame = CGRect(x: CGFloat(self.pinTextfield.frame.size.width - 25), y: CGFloat(5), width: CGFloat(25), height: CGFloat(25))
+        button.addTarget(self, action: #selector(self.toggleHidePassword), for: .touchUpInside)
+        self.pinTextfield.rightView = button
+        self.pinTextfield.rightViewMode = .always
+        
     }
     
     func setupData(){
@@ -78,6 +97,11 @@ class LoanConfirmationViewController: UIViewController {
         self.productPrice.text = self.loanConfirmationViewViewModel.productPrice
         self.productEstimatedName.text = self.loanConfirmationViewViewModel.productDueDate
         self.productTotal.text = self.loanConfirmationViewViewModel.productTotal
+    }
+    
+    @IBAction func toggleHidePassword(_ sender: Any) {
+        self.pinTextfield.isSecureTextEntry = !self.pinTextfield.isSecureTextEntry
+        self.setupButtonInsidePin()
     }
 
 }

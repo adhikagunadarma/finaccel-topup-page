@@ -49,7 +49,7 @@ let termsAndCondition = [
 
 let listPromos = [
     Promo(imageBanner: "promo-1", title: "Discount 20% at Kedai Hape Original, Mall Kota Kasablabka", validDate: "10-31 Januari 2019", promoCode: "BIRTHDAY9", termsCondition: termsAndCondition),
-    Promo(imageBanner: "promo-2", title: "Buy 1 Get 1 free, Mall Grand Indonesia", validDate: "14-25 Febuari 2030", promoCode: "VALENTINE14", termsCondition: termsAndCondition),
+    Promo(imageBanner: "promo-2", title: "Buy 1 Get 1 free Pizza Marzano, Mall Grand Indonesia", validDate: "14-25 Febuari 2030", promoCode: "VALENTINE14", termsCondition: termsAndCondition),
     Promo(imageBanner: "promo-3", title: "Discount 50% at Kedai Kopi Kulo, Mall Central Park", validDate: "24-25 December 2192", promoCode: "CHRISTMAS92", termsCondition: termsAndCondition)
 ]
 

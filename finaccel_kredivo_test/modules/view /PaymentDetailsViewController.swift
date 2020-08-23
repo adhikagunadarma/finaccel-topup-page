@@ -11,10 +11,10 @@ import UIKit
 class PaymentDetailsViewController: UIViewController {
     
     var paymentDetailViewViewModel: PaymentDetailViewViewModel!
-
+    
     @IBOutlet weak var mobileNumberLogo: UIImageView!
     @IBOutlet weak var mobileNumberText: UILabel!
-
+    
     @IBOutlet weak var orderIdText: UILabel!
     @IBOutlet weak var statusText: UILabel!
     @IBOutlet weak var productName: UILabel!
@@ -22,7 +22,7 @@ class PaymentDetailsViewController: UIViewController {
     @IBOutlet weak var productFeenName: UILabel!
     @IBOutlet weak var productFee: UILabel!
     @IBOutlet weak var productTotal: UILabel!
- 
+    
     @IBOutlet weak var productDueDate: UILabel!
     @IBOutlet weak var orderDetailView: UIView!
     @IBOutlet weak var orderDetailContentView: UIView!
@@ -35,8 +35,10 @@ class PaymentDetailsViewController: UIViewController {
         self.setupData()
     }
     
-
+    
     @IBAction func okButtonClicked(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+        return
     }
     
     func setupView(){
@@ -45,6 +47,8 @@ class PaymentDetailsViewController: UIViewController {
         self.paymentDetailView.layer.cornerRadius = 10.0
         self.paymentDetailContentView.roundCorners([.bottomLeft, .bottomRight], radius: 10)
         self.noticeView.layer.cornerRadius = 10.0
+        self.mobileNumberLogo.layer.cornerRadius = self.mobileNumberLogo.frame.size.width / 2
+        self.mobileNumberLogo.clipsToBounds = true
     }
     func setupData(){
         self.mobileNumberText.text = self.paymentDetailViewViewModel.orderMobileNumber
