@@ -12,6 +12,9 @@
 		121D51AD24F1651B005631D6 /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AC24F1651B005631D6 /* OrderDataModel.swift */; };
 		121D51AF24F1654D005631D6 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51AE24F1654D005631D6 /* OrderViewModel.swift */; };
 		121D51B124F178B6005631D6 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D51B024F178B6005631D6 /* Extra.swift */; };
+		12318A3224F248D1002B1855 /* finaccel_kredivo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12318A3124F248D1002B1855 /* finaccel_kredivo_testUITests.swift */; };
+		12318A4024F2490B002B1855 /* finaccel_kredivo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12318A3F24F2490B002B1855 /* finaccel_kredivo_testTests.swift */; };
+		12318A4824F2525B002B1855 /* ViewControllerMockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12318A4724F2525B002B1855 /* ViewControllerMockViewModel.swift */; };
 		1298333D24EE4D230081E197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298333C24EE4D230081E197 /* AppDelegate.swift */; };
 		1298333F24EE4D230081E197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298333E24EE4D230081E197 /* SceneDelegate.swift */; };
 		1298334424EE4D230081E197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1298334224EE4D230081E197 /* Main.storyboard */; };
@@ -41,12 +44,36 @@
 		A9123BAEB2123901A55CD1AB /* Pods_finaccel_kredivo_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F71A6003DB7FC0751B79537 /* Pods_finaccel_kredivo_test.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		12318A3424F248D1002B1855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1298333124EE4D230081E197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1298333824EE4D230081E197;
+			remoteInfo = finaccel_kredivo_test;
+		};
+		12318A4224F2490B002B1855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1298333124EE4D230081E197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1298333824EE4D230081E197;
+			remoteInfo = finaccel_kredivo_test;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1217E41C24F202C700BAE117 /* kredivologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kredivologo.png; sourceTree = "<group>"; };
 		1217E41E24F21E2F00BAE117 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		121D51AC24F1651B005631D6 /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
 		121D51AE24F1654D005631D6 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		121D51B024F178B6005631D6 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
+		12318A2F24F248D1002B1855 /* finaccel_kredivo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finaccel_kredivo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12318A3124F248D1002B1855 /* finaccel_kredivo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finaccel_kredivo_testUITests.swift; sourceTree = "<group>"; };
+		12318A3324F248D1002B1855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12318A3D24F2490B002B1855 /* finaccel_kredivo_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finaccel_kredivo_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12318A3F24F2490B002B1855 /* finaccel_kredivo_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finaccel_kredivo_testTests.swift; sourceTree = "<group>"; };
+		12318A4124F2490B002B1855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12318A4724F2525B002B1855 /* ViewControllerMockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMockViewModel.swift; sourceTree = "<group>"; };
 		1298333924EE4D230081E197 /* finaccel_kredivo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finaccel_kredivo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1298333C24EE4D230081E197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1298333E24EE4D230081E197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +108,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		12318A2C24F248D1002B1855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12318A3A24F2490B002B1855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1298333624EE4D230081E197 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,10 +133,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12318A3024F248D1002B1855 /* finaccel_kredivo_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12318A3124F248D1002B1855 /* finaccel_kredivo_testUITests.swift */,
+				12318A3324F248D1002B1855 /* Info.plist */,
+			);
+			path = finaccel_kredivo_testUITests;
+			sourceTree = "<group>";
+		};
+		12318A3E24F2490B002B1855 /* finaccel_kredivo_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				12318A3F24F2490B002B1855 /* finaccel_kredivo_testTests.swift */,
+				12318A4124F2490B002B1855 /* Info.plist */,
+				12318A4724F2525B002B1855 /* ViewControllerMockViewModel.swift */,
+			);
+			path = finaccel_kredivo_testTests;
+			sourceTree = "<group>";
+		};
 		1298333024EE4D230081E197 = {
 			isa = PBXGroup;
 			children = (
 				1298333B24EE4D230081E197 /* finaccel_kredivo_test */,
+				12318A3024F248D1002B1855 /* finaccel_kredivo_testUITests */,
+				12318A3E24F2490B002B1855 /* finaccel_kredivo_testTests */,
 				1298333A24EE4D230081E197 /* Products */,
 				AB51FAA1268E26A1B6F19CB6 /* Pods */,
 				6E1A70B89C64FE8EC8A5065A /* Frameworks */,
@@ -106,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				1298333924EE4D230081E197 /* finaccel_kredivo_test.app */,
+				12318A2F24F248D1002B1855 /* finaccel_kredivo_testUITests.xctest */,
+				12318A3D24F2490B002B1855 /* finaccel_kredivo_testTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +290,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		12318A2E24F248D1002B1855 /* finaccel_kredivo_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12318A3824F248D1002B1855 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_testUITests" */;
+			buildPhases = (
+				12318A2B24F248D1002B1855 /* Sources */,
+				12318A2C24F248D1002B1855 /* Frameworks */,
+				12318A2D24F248D1002B1855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12318A3524F248D1002B1855 /* PBXTargetDependency */,
+			);
+			name = finaccel_kredivo_testUITests;
+			productName = finaccel_kredivo_testUITests;
+			productReference = 12318A2F24F248D1002B1855 /* finaccel_kredivo_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		12318A3C24F2490B002B1855 /* finaccel_kredivo_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12318A4424F2490B002B1855 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_testTests" */;
+			buildPhases = (
+				12318A3924F2490B002B1855 /* Sources */,
+				12318A3A24F2490B002B1855 /* Frameworks */,
+				12318A3B24F2490B002B1855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12318A4324F2490B002B1855 /* PBXTargetDependency */,
+			);
+			name = finaccel_kredivo_testTests;
+			productName = finaccel_kredivo_testTests;
+			productReference = 12318A3D24F2490B002B1855 /* finaccel_kredivo_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1298333824EE4D230081E197 /* finaccel_kredivo_test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1298334D24EE4D250081E197 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_test" */;
@@ -255,6 +355,14 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Adhika gunadarma";
 				TargetAttributes = {
+					12318A2E24F248D1002B1855 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1298333824EE4D230081E197;
+					};
+					12318A3C24F2490B002B1855 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1298333824EE4D230081E197;
+					};
 					1298333824EE4D230081E197 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -274,11 +382,27 @@
 			projectRoot = "";
 			targets = (
 				1298333824EE4D230081E197 /* finaccel_kredivo_test */,
+				12318A2E24F248D1002B1855 /* finaccel_kredivo_testUITests */,
+				12318A3C24F2490B002B1855 /* finaccel_kredivo_testTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		12318A2D24F248D1002B1855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12318A3B24F2490B002B1855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1298333724EE4D230081E197 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +466,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12318A2B24F248D1002B1855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12318A3224F248D1002B1855 /* finaccel_kredivo_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12318A3924F2490B002B1855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12318A4024F2490B002B1855 /* finaccel_kredivo_testTests.swift in Sources */,
+				12318A4824F2525B002B1855 /* ViewControllerMockViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1298333524EE4D230081E197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +512,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		12318A3524F248D1002B1855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1298333824EE4D230081E197 /* finaccel_kredivo_test */;
+			targetProxy = 12318A3424F248D1002B1855 /* PBXContainerItemProxy */;
+		};
+		12318A4324F2490B002B1855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1298333824EE4D230081E197 /* finaccel_kredivo_test */;
+			targetProxy = 12318A4224F2490B002B1855 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		1298334224EE4D230081E197 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -391,6 +545,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		12318A3624F248D1002B1855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = finaccel_kredivo_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.com.finaccel-kredivo-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = finaccel_kredivo_test;
+			};
+			name = Debug;
+		};
+		12318A3724F248D1002B1855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = finaccel_kredivo_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.com.finaccel-kredivo-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = finaccel_kredivo_test;
+			};
+			name = Release;
+		};
+		12318A4524F2490B002B1855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = finaccel_kredivo_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.com.finaccel-kredivo-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finaccel_kredivo_test.app/finaccel_kredivo_test";
+			};
+			name = Debug;
+		};
+		12318A4624F2490B002B1855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = finaccel_kredivo_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.com.finaccel-kredivo-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finaccel_kredivo_test.app/finaccel_kredivo_test";
+			};
+			name = Release;
+		};
 		1298334B24EE4D250081E197 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,6 +776,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12318A3824F248D1002B1855 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12318A3624F248D1002B1855 /* Debug */,
+				12318A3724F248D1002B1855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12318A4424F2490B002B1855 /* Build configuration list for PBXNativeTarget "finaccel_kredivo_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12318A4524F2490B002B1855 /* Debug */,
+				12318A4624F2490B002B1855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1298333424EE4D230081E197 /* Build configuration list for PBXProject "finaccel_kredivo_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
